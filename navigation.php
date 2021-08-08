@@ -17,20 +17,20 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #dfe4ea;">
     <div class="container-fluid">
-       <a class="navbar-brand logo" href="index.php"><image src="image/logo.png" alt="logo" height=50px width=50px>Bank</a>
+       <a class="navbar-brand logo" href="index.php"><image src="image/logo.png" alt="logo" height=50px width=50px >Bank</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item btn btn-secondary">
-            <a class="nav-link text-white" href="index.php">Home</a>
+            <a class="nav-link text-white" href="index.php"style="color:yellow;">Home</a>
           </li>
           <li class="nav-item btn btn-secondary">
-            <a class="nav-link text-white" href="transfer_money.php">View Customers</a>
+            <a class="nav-link text-white" href="transfer_money.php"style="color:yellow;">View Customers</a>
           </li>
           <li class="nav-item btn btn-secondary">
-            <a class="nav-link link-text text-white" href="transaction_history.php">Customers Transaction History</a>
+            <a class="nav-link link-text text-white" href="transaction_history.php"style="color:yellow;">Customers Transaction History</a>
           </li>
         </ul>
       </div>

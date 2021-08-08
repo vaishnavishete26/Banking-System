@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction</title>
+    <style>
+      body
+      {
+          background-image:url('image/customer.jpg');
+          background-position: center;
+          background-size: cover;
+        height: 100vh;
+      } 
+      h3{
+    background-color:black;
+    cursor: pointer;
+    color: #161203;
+    text-align: center;
+    height: 100px;
+    margin-bottom: 0 !important;
+    border: 0 !important;
+    height: auto;
+    transform: 1s;
+    font-family: 'Suez One', serif;
+}     
+    </style>
+</head>
+<body>
 <?php
 include('connection.php');
 
@@ -84,7 +114,7 @@ if(isset($_POST['submit']))
 ?>
 
 	<div class="container">
-        <h1>Transaction</h1>
+        <h3 style="color:yellow;">Transaction</h3>
             <?php
                 include 'connection.php';
                 $sid=$_GET['id'];
@@ -100,23 +130,23 @@ if(isset($_POST['submit']))
         <div>
             <table class="table table-striped table-condensed table-bordered">
                 <tr>
-                    <th class="text-center">Id</th>
-                    <th class="text-center">Name</th>
-                    <th class="text-center">Email</th>
-                    <th class="text-center">Balance</th>
+                    <th class="text-center"style="color:yellow;">Id</th>
+                    <th class="text-center"style="color:yellow;">Name</th>
+                    <th class="text-center"style="color:yellow;">Email</th>
+                    <th class="text-center"style="color:yellow;">Balance</th>
                 </tr>
                 <tr>
-                    <td class="py-2"><?php echo $rows['id'] ?></td>
-                    <td class="py-2"><?php echo $rows['name'] ?></td>
-                    <td class="py-2"><?php echo $rows['email'] ?></td>
-                    <td class="py-2"><?php echo $rows['balance'] ?></td>
+                    <td class="py-2"style="color:yellow;"><?php echo $rows['id'] ?></td>
+                    <td class="py-2"style="color:yellow;"><?php echo $rows['name'] ?></td>
+                    <td class="py-2"style="color:yellow;"><?php echo $rows['email'] ?></td>
+                    <td class="py-2"style="color:yellow;"><?php echo $rows['balance'] ?></td>
                 </tr>
             </table>
         </div>
         <br>
-        <label>Transfer To:</label>
-        <select name="to" class="form-control" required>
-            <option value="" disabled selected>Choose</option>
+        <label style="color:yellow;">Transfer To:</label>
+        <select name="to" class="form-control" required style="background-color:lightblue;">
+            <option value="" disabled selected >Choose</option>
             <?php
                 include 'connection.php';
                 $sid=$_GET['id'];
@@ -140,12 +170,12 @@ if(isset($_POST['submit']))
             <div>
         </select>
         <br>
-        <br>
-            <label>Amount:</label>
-            <input type="number" class="form-control" name="amount" required>   
+        <br >
+            <label style="color:yellow;">Amount:</label>
+            <input type="number" class="form-control" name="amount" required style="background-color:lightblue;">   
             <br><br>
                 <div class="text-center" >
-            <button class="btn btn-primary" name="submit" type="submit" id="btn">Transfer</button>
+            <button class="btn btn-primary" name="submit" type="submit" id="btn" style=" text bold;color:yellow;background-color:black;">Transfer</button>
             </div>
         </form>
     </div>
